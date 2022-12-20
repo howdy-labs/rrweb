@@ -7,33 +7,24 @@
 
 # rrweb
 
-**[The rrweb documentary (in Chinese, with English subtitles)](https://www.bilibili.com/video/BV1wL4y1B7wN?share_source=copy_web)**
+**This is a simpler version of the [original rrewb README](../../README.md) within this rrweb subpackage**
 
-[![Join the chat at slack](https://img.shields.io/badge/slack-@rrweb-teal.svg?logo=slack)](https://join.slack.com/t/rrweb/shared_invite/zt-siwoc6hx-uWay3s2wyG8t5GpZVb8rWg)
-[![Twitter Follow](https://img.shields.io/badge/twitter-@rrweb__io-teal.svg?logo=twitter)](https://twitter.com/rrweb_io)
-![total gzip size](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.js?compression=gzip&label=total%20gzip%20size)
-![recorder gzip size](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/rrweb@latest/dist/record/rrweb-record.min.js?compression=gzip&label=recorder%20gzip%20size)
-[![](https://data.jsdelivr.com/v1/package/npm/rrweb/badge)](https://www.jsdelivr.com/package/npm/rrweb)
-
-[中文文档](./README.zh_CN.md)
-
-> I have joined Github Sponsors and highly appreciate your sponsorship.
+[中文文档](../../README.zh_CN.md)
 
 rrweb refers to 'record and replay the web', which is a tool for recording and replaying users' interactions on the web.
 
 ## Guide
 
-[**📚 Read the rrweb guide here. 📚**](./guide.md)
+[**📚 Read the rrweb guide here. 📚**](../../guide.md)
 
-[**🍳 Recipes 🍳**](./docs/recipes/index.md)
+[**🍳 Recipes 🍳**](../../docs/recipes/index.md)
 
 ## Project Structure
 
-rrweb is mainly composed of 3 parts:
+**[rrweb](https://github.com/rrweb-io/rrweb)** mainly includes two funtions:
 
-- **[rrweb-snapshot](https://github.com/rrweb-io/rrweb/tree/master/packages/rrweb-snapshot/)**, including both snapshot and rebuilding features. The snapshot is used to convert the DOM and its state into a serializable data structure with a unique identifier; the rebuilding feature is to rebuild the snapshot into corresponding DOM.
-- **[rrweb](https://github.com/rrweb-io/rrweb)**, including two functions, record and replay. The record function is used to record all the mutations in the DOM; the replay is to replay the recorded mutations one by one according to the corresponding timestamp.
-- **[rrweb-player](https://github.com/rrweb-io/rrweb/tree/master/packages/rrweb-player/)**, is a player UI for rrweb, providing GUI-based functions like pause, fast-forward, drag and drop to play at any time.
+- **Record**: The record function is used to record all the mutations in the DOM
+- **Replay**: The replay function is to replay the recorded mutations one by one according to the corresponding timestamp.
 
 ## Roadmap
 
@@ -49,10 +40,10 @@ rrweb is mainly composed of 3 parts:
 
 ## Internal Design
 
-- [serialization](./docs/serialization.md)
-- [incremental snapshot](./docs/observer.md)
-- [replay](./docs/replay.md)
-- [sandbox](./docs/sandbox.md)
+- [serialization](../../docs/serialization.md)
+- [incremental snapshot](../../docs/observer.md)
+- [replay](../../docs/replay.md)
+- [sandbox](../../docs/sandbox.md)
 
 ## Contribute Guide
 
@@ -71,7 +62,7 @@ Protip: You can run `yarn test` in the root folder to run all the tests.
 
 In addition to adding integration tests and unit tests, rrweb also provides a REPL testing tool.
 
-[Using the REPL tool](./guide.md#REPL-tool)
+[Using the REPL tool](../../guide.md#REPL-tool)
 
 ## Core Team Members
 
