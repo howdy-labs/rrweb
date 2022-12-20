@@ -764,6 +764,10 @@ export class Replayer {
       }
     };
 
+    // Fixes 'failed to execute insertBefore on node'
+    // See: https://github.com/rrweb-io/rrweb/pull/1042/files#diff-9806f185dacef6d3dcdf34e97e7d597acde0da43c1786c5b31a3fe793ad480a5
+    this.mirror.reset();
+
     rebuild(event.data.node, {
       doc: this.iframe.contentDocument,
       afterAppend,
